@@ -11,10 +11,10 @@ import lombok.Setter;
 @NoArgsConstructor // a no argument constructor
 @AllArgsConstructor // add all argument constructor
 @Entity // specify a class as a JP entity
-@Table(name = "employees") // specify the table details
+@Table(name = "employees") // Turn a java Object into a table name employee. 1 class = 1 table.
 public class Employee {
 
-    @Id
+    @Id // primary key
     @GeneratedValue(strategy = GenerationType.IDENTITY) // auto increment the primary key
     private Long id;
 
